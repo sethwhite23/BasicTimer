@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface HelloTimerTests : XCTestCase
+@interface BasicTimerTests : XCTestCase
 
 @end
 
-@implementation HelloTimerTests
+@implementation BasicTimerTests
 
 - (void)setUp {
     [super setUp];

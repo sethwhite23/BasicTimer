@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HelloTimer.xcodeproj">
+      location = "self:/Users/sethwhite/Documents/coding/xcode-projects/HelloTimer/BasicTimer.xcodeproj">
    </FileRef>
 </Workspace>

@@ -104,7 +104,7 @@
         <!--Alarm-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="Alarm" id="8rJ-Kc-sve" customClass="AlarmViewController" sceneMemberID="viewController">
+                <viewController title="Alarm" id="8rJ-Kc-sve" customClass="TimerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -187,7 +187,7 @@
                             <constraint firstItem="KRG-4a-fF5" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerXWithinMargins" id="jIv-nZ-LCH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alarm" image="alarm" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="alarm" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="alarmStartButton" destination="A2I-FO-WCa" id="QwI-fK-dWx"/>
                         <outlet property="alarmStopButton" destination="3lp-s9-QXe" id="CQC-0v-fqv"/>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC36E2F11C88042F0059F1B4"
-               BuildableName = "HelloTimer.app"
-               BlueprintName = "HelloTimer"
-               ReferencedContainer = "container:HelloTimer.xcodeproj">
+               BuildableName = "BasicTimer.app"
+               BlueprintName = "BasicTimer"
+               ReferencedContainer = "container:BasicTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC36E30D1C8804300059F1B4"
-               BuildableName = "HelloTimerTests.xctest"
-               BlueprintName = "HelloTimerTests"
-               ReferencedContainer = "container:HelloTimer.xcodeproj">
+               BuildableName = "BasicTimer.xctest"
+               BlueprintName = "BasicTimerTests"
+               ReferencedContainer = "container:BasicTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC36E3181C8804300059F1B4"
-               BuildableName = "HelloTimerUITests.xctest"
-               BlueprintName = "HelloTimerUITests"
-               ReferencedContainer = "container:HelloTimer.xcodeproj">
+               BuildableName = "BasicTimer.xctest"
+               BlueprintName = "BasicTimerUITests"
+               ReferencedContainer = "container:BasicTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC36E2F11C88042F0059F1B4"
-            BuildableName = "HelloTimer.app"
-            BlueprintName = "HelloTimer"
-            ReferencedContainer = "container:HelloTimer.xcodeproj">
+            BuildableName = "BasicTimer.app"
+            BlueprintName = "BasicTimer"
+            ReferencedContainer = "container:BasicTimer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC36E2F11C88042F0059F1B4"
-            BuildableName = "HelloTimer.app"
-            BlueprintName = "HelloTimer"
-            ReferencedContainer = "container:HelloTimer.xcodeproj">
+            BuildableName = "BasicTimer.app"
+            BlueprintName = "BasicTimer"
+            ReferencedContainer = "container:BasicTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC36E2F11C88042F0059F1B4"
-            BuildableName = "HelloTimer.app"
-            BlueprintName = "HelloTimer"
-            ReferencedContainer = "container:HelloTimer.xcodeproj">
+            BuildableName = "BasicTimer.app"
+            BlueprintName = "BasicTimer"
+            ReferencedContainer = "container:BasicTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

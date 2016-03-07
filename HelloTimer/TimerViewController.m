@@ -6,10 +6,10 @@
 //  Copyright © 2016 Seth White. All rights reserved.
 //
 
-#import "AlarmViewController.h"
+#import "TimerViewController.h"
 #import "TimerSelectionController.h"
 
-@interface AlarmViewController ()
+@interface TimerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *alarmStartButton;
 @property (weak, nonatomic) IBOutlet UIButton *alarmStopButton;
@@ -20,7 +20,7 @@ NSTimeInterval timer = 0;
 NSTimer *alarmTimer;
 
 
-@implementation AlarmViewController
+@implementation TimerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -13,9 +13,9 @@
 		AC36E3031C8804300059F1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC36E3011C8804300059F1B4 /* Main.storyboard */; };
 		AC36E3051C8804300059F1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC36E3041C8804300059F1B4 /* Assets.xcassets */; };
 		AC36E3081C8804300059F1B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC36E3061C8804300059F1B4 /* LaunchScreen.storyboard */; };
-		AC36E3131C8804300059F1B4 /* HelloTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E3121C8804300059F1B4 /* HelloTimerTests.m */; };
+		AC36E3131C8804300059F1B4 /* BasicTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E3121C8804300059F1B4 /* BasicTimerTests.m */; };
 		AC36E31E1C8804300059F1B4 /* HelloTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E31D1C8804300059F1B4 /* HelloTimerUITests.m */; };
-		AC36E32C1C8BB9BB0059F1B4 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E32B1C8BB9BB0059F1B4 /* AlarmViewController.m */; };
+		AC36E32C1C8BB9BB0059F1B4 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E32B1C8BB9BB0059F1B4 /* TimerViewController.m */; };
 		AC36E32F1C8BCF850059F1B4 /* TimerSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E32E1C8BCF850059F1B4 /* TimerSelectionController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,24 +37,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC36E2F21C88042F0059F1B4 /* HelloTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC36E2F21C88042F0059F1B4 /* BasicTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC36E2F61C88042F0059F1B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC36E2F81C88042F0059F1B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC36E2F91C88042F0059F1B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AC36E2FB1C88042F0059F1B4 /* StopWatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
 		AC36E2FC1C88042F0059F1B4 /* StopWatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
-		AC36E2FE1C88042F0059F1B4 /* AlarmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		AC36E2FE1C88042F0059F1B4 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		AC36E3021C8804300059F1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC36E3041C8804300059F1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC36E3071C8804300059F1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC36E3091C8804300059F1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC36E30E1C8804300059F1B4 /* HelloTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC36E3121C8804300059F1B4 /* HelloTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTimerTests.m; sourceTree = "<group>"; };
+		AC36E30E1C8804300059F1B4 /* BasicTimer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicTimer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC36E3121C8804300059F1B4 /* BasicTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicTimerTests.m; sourceTree = "<group>"; };
 		AC36E3141C8804300059F1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC36E3191C8804300059F1B4 /* HelloTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC36E3191C8804300059F1B4 /* BasicTimer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicTimer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC36E31D1C8804300059F1B4 /* HelloTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTimerUITests.m; sourceTree = "<group>"; };
 		AC36E31F1C8804300059F1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC36E32B1C8BB9BB0059F1B4 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		AC36E32B1C8BB9BB0059F1B4 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		AC36E32D1C8BCF850059F1B4 /* TimerSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerSelectionController.h; sourceTree = "<group>"; };
 		AC36E32E1C8BCF850059F1B4 /* TimerSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerSelectionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,9 @@
 		AC36E2E91C88042F0059F1B4 = {
 			isa = PBXGroup;
 			children = (
-				AC36E2F41C88042F0059F1B4 /* HelloTimer */,
-				AC36E3111C8804300059F1B4 /* HelloTimerTests */,
-				AC36E31C1C8804300059F1B4 /* HelloTimerUITests */,
+				AC36E2F41C88042F0059F1B4 /* BasicTimer */,
+				AC36E3111C8804300059F1B4 /* BasicTimerTests */,
+				AC36E31C1C8804300059F1B4 /* BasicTimerUITests */,
 				AC36E2F31C88042F0059F1B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,22 +97,22 @@
 		AC36E2F31C88042F0059F1B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC36E2F21C88042F0059F1B4 /* HelloTimer.app */,
-				AC36E30E1C8804300059F1B4 /* HelloTimerTests.xctest */,
-				AC36E3191C8804300059F1B4 /* HelloTimerUITests.xctest */,
+				AC36E2F21C88042F0059F1B4 /* BasicTimer.app */,
+				AC36E30E1C8804300059F1B4 /* BasicTimer.xctest */,
+				AC36E3191C8804300059F1B4 /* BasicTimer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC36E2F41C88042F0059F1B4 /* HelloTimer */ = {
+		AC36E2F41C88042F0059F1B4 /* BasicTimer */ = {
 			isa = PBXGroup;
 			children = (
 				AC36E2F81C88042F0059F1B4 /* AppDelegate.h */,
 				AC36E2F91C88042F0059F1B4 /* AppDelegate.m */,
 				AC36E2FB1C88042F0059F1B4 /* StopWatchViewController.h */,
 				AC36E2FC1C88042F0059F1B4 /* StopWatchViewController.m */,
-				AC36E2FE1C88042F0059F1B4 /* AlarmViewController.h */,
-				AC36E32B1C8BB9BB0059F1B4 /* AlarmViewController.m */,
+				AC36E2FE1C88042F0059F1B4 /* TimerViewController.h */,
+				AC36E32B1C8BB9BB0059F1B4 /* TimerViewController.m */,
 				AC36E3011C8804300059F1B4 /* Main.storyboard */,
 				AC36E32D1C8BCF850059F1B4 /* TimerSelectionController.h */,
 				AC36E32E1C8BCF850059F1B4 /* TimerSelectionController.m */,
@@ -121,6 +121,7 @@
 				AC36E3091C8804300059F1B4 /* Info.plist */,
 				AC36E2F51C88042F0059F1B4 /* Supporting Files */,
 			);
+			name = BasicTimer;
 			path = HelloTimer;
 			sourceTree = "<group>";
 		};
@@ -132,30 +133,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AC36E3111C8804300059F1B4 /* HelloTimerTests */ = {
+		AC36E3111C8804300059F1B4 /* BasicTimerTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC36E3121C8804300059F1B4 /* HelloTimerTests.m */,
+				AC36E3121C8804300059F1B4 /* BasicTimerTests.m */,
 				AC36E3141C8804300059F1B4 /* Info.plist */,
 			);
+			name = BasicTimerTests;
 			path = HelloTimerTests;
 			sourceTree = "<group>";
 		};
-		AC36E31C1C8804300059F1B4 /* HelloTimerUITests */ = {
+		AC36E31C1C8804300059F1B4 /* BasicTimerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				AC36E31D1C8804300059F1B4 /* HelloTimerUITests.m */,
 				AC36E31F1C8804300059F1B4 /* Info.plist */,
 			);
+			name = BasicTimerUITests;
 			path = HelloTimerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC36E2F11C88042F0059F1B4 /* HelloTimer */ = {
+		AC36E2F11C88042F0059F1B4 /* BasicTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC36E3221C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimer" */;
+			buildConfigurationList = AC36E3221C8804300059F1B4 /* Build configuration list for PBXNativeTarget "BasicTimer" */;
 			buildPhases = (
 				AC36E2EE1C88042F0059F1B4 /* Sources */,
 				AC36E2EF1C88042F0059F1B4 /* Frameworks */,
@@ -165,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = HelloTimer;
+			name = BasicTimer;
 			productName = HelloTimer;
-			productReference = AC36E2F21C88042F0059F1B4 /* HelloTimer.app */;
+			productReference = AC36E2F21C88042F0059F1B4 /* BasicTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC36E30D1C8804300059F1B4 /* HelloTimerTests */ = {
+		AC36E30D1C8804300059F1B4 /* BasicTimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC36E3251C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimerTests" */;
+			buildConfigurationList = AC36E3251C8804300059F1B4 /* Build configuration list for PBXNativeTarget "BasicTimerTests" */;
 			buildPhases = (
 				AC36E30A1C8804300059F1B4 /* Sources */,
 				AC36E30B1C8804300059F1B4 /* Frameworks */,
@@ -183,14 +186,14 @@
 			dependencies = (
 				AC36E3101C8804300059F1B4 /* PBXTargetDependency */,
 			);
-			name = HelloTimerTests;
+			name = BasicTimerTests;
 			productName = HelloTimerTests;
-			productReference = AC36E30E1C8804300059F1B4 /* HelloTimerTests.xctest */;
+			productReference = AC36E30E1C8804300059F1B4 /* BasicTimer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AC36E3181C8804300059F1B4 /* HelloTimerUITests */ = {
+		AC36E3181C8804300059F1B4 /* BasicTimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC36E3281C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimerUITests" */;
+			buildConfigurationList = AC36E3281C8804300059F1B4 /* Build configuration list for PBXNativeTarget "BasicTimerUITests" */;
 			buildPhases = (
 				AC36E3151C8804300059F1B4 /* Sources */,
 				AC36E3161C8804300059F1B4 /* Frameworks */,
@@ -201,9 +204,9 @@
 			dependencies = (
 				AC36E31B1C8804300059F1B4 /* PBXTargetDependency */,
 			);
-			name = HelloTimerUITests;
+			name = BasicTimerUITests;
 			productName = HelloTimerUITests;
-			productReference = AC36E3191C8804300059F1B4 /* HelloTimerUITests.xctest */;
+			productReference = AC36E3191C8804300059F1B4 /* BasicTimer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC36E2ED1C88042F0059F1B4 /* Build configuration list for PBXProject "HelloTimer" */;
+			buildConfigurationList = AC36E2ED1C88042F0059F1B4 /* Build configuration list for PBXProject "BasicTimer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,9 +244,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC36E2F11C88042F0059F1B4 /* HelloTimer */,
-				AC36E30D1C8804300059F1B4 /* HelloTimerTests */,
-				AC36E3181C8804300059F1B4 /* HelloTimerUITests */,
+				AC36E2F11C88042F0059F1B4 /* BasicTimer */,
+				AC36E30D1C8804300059F1B4 /* BasicTimerTests */,
+				AC36E3181C8804300059F1B4 /* BasicTimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC36E32C1C8BB9BB0059F1B4 /* AlarmViewController.m in Sources */,
+				AC36E32C1C8BB9BB0059F1B4 /* TimerViewController.m in Sources */,
 				AC36E2FA1C88042F0059F1B4 /* AppDelegate.m in Sources */,
 				AC36E2FD1C88042F0059F1B4 /* StopWatchViewController.m in Sources */,
 				AC36E2F71C88042F0059F1B4 /* main.m in Sources */,
@@ -292,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC36E3131C8804300059F1B4 /* HelloTimerTests.m in Sources */,
+				AC36E3131C8804300059F1B4 /* BasicTimerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +312,12 @@
 /* Begin PBXTargetDependency section */
 		AC36E3101C8804300059F1B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC36E2F11C88042F0059F1B4 /* HelloTimer */;
+			target = AC36E2F11C88042F0059F1B4 /* BasicTimer */;
 			targetProxy = AC36E30F1C8804300059F1B4 /* PBXContainerItemProxy */;
 		};
 		AC36E31B1C8804300059F1B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC36E2F11C88042F0059F1B4 /* HelloTimer */;
+			target = AC36E2F11C88042F0059F1B4 /* BasicTimer */;
 			targetProxy = AC36E31A1C8804300059F1B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -428,7 +431,7 @@
 				INFOPLIST_FILE = HelloTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.HelloTimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BasicTimer;
 			};
 			name = Debug;
 		};
@@ -439,7 +442,7 @@
 				INFOPLIST_FILE = HelloTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.HelloTimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BasicTimer;
 			};
 			name = Release;
 		};
@@ -450,8 +453,8 @@
 				INFOPLIST_FILE = HelloTimerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.HelloTimerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloTimer.app/HelloTimer";
+				PRODUCT_NAME = BasicTimer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicTimer.app/BasicTimer";
 			};
 			name = Debug;
 		};
@@ -462,8 +465,8 @@
 				INFOPLIST_FILE = HelloTimerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.HelloTimerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloTimer.app/HelloTimer";
+				PRODUCT_NAME = BasicTimer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicTimer.app/BasicTimer";
 			};
 			name = Release;
 		};
@@ -473,7 +476,7 @@
 				INFOPLIST_FILE = HelloTimerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.HelloTimerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BasicTimer;
 				TEST_TARGET_NAME = HelloTimer;
 				USES_XCTRUNNER = YES;
 			};
@@ -485,7 +488,7 @@
 				INFOPLIST_FILE = HelloTimerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.HelloTimerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BasicTimer;
 				TEST_TARGET_NAME = HelloTimer;
 				USES_XCTRUNNER = YES;
 			};
@@ -494,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC36E2ED1C88042F0059F1B4 /* Build configuration list for PBXProject "HelloTimer" */ = {
+		AC36E2ED1C88042F0059F1B4 /* Build configuration list for PBXProject "BasicTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC36E3201C8804300059F1B4 /* Debug */,
@@ -503,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC36E3221C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimer" */ = {
+		AC36E3221C8804300059F1B4 /* Build configuration list for PBXNativeTarget "BasicTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC36E3231C8804300059F1B4 /* Debug */,
@@ -512,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC36E3251C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimerTests" */ = {
+		AC36E3251C8804300059F1B4 /* Build configuration list for PBXNativeTarget "BasicTimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC36E3261C8804300059F1B4 /* Debug */,
@@ -521,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC36E3281C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimerUITests" */ = {
+		AC36E3281C8804300059F1B4 /* Build configuration list for PBXNativeTarget "BasicTimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC36E3291C8804300059F1B4 /* Debug */,
