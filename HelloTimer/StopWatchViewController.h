@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface StopWatchViewController : UIViewController
 
+- (void) updateTimer;
 
 @end
 

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TimerSelectionController.h"
 
-@interface SecondViewController : UIViewController
+@interface AlarmViewController : UIViewController  <TimerSelectionDelegate>
 
 
 @end

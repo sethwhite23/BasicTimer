@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		AC36E2F71C88042F0059F1B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E2F61C88042F0059F1B4 /* main.m */; };
 		AC36E2FA1C88042F0059F1B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E2F91C88042F0059F1B4 /* AppDelegate.m */; };
-		AC36E2FD1C88042F0059F1B4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E2FC1C88042F0059F1B4 /* FirstViewController.m */; };
-		AC36E3001C88042F0059F1B4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E2FF1C88042F0059F1B4 /* SecondViewController.m */; };
+		AC36E2FD1C88042F0059F1B4 /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E2FC1C88042F0059F1B4 /* StopWatchViewController.m */; };
 		AC36E3031C8804300059F1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC36E3011C8804300059F1B4 /* Main.storyboard */; };
 		AC36E3051C8804300059F1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC36E3041C8804300059F1B4 /* Assets.xcassets */; };
 		AC36E3081C8804300059F1B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC36E3061C8804300059F1B4 /* LaunchScreen.storyboard */; };
 		AC36E3131C8804300059F1B4 /* HelloTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E3121C8804300059F1B4 /* HelloTimerTests.m */; };
 		AC36E31E1C8804300059F1B4 /* HelloTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E31D1C8804300059F1B4 /* HelloTimerUITests.m */; };
+		AC36E32C1C8BB9BB0059F1B4 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E32B1C8BB9BB0059F1B4 /* AlarmViewController.m */; };
+		AC36E32F1C8BCF850059F1B4 /* TimerSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36E32E1C8BCF850059F1B4 /* TimerSelectionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +41,9 @@
 		AC36E2F61C88042F0059F1B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC36E2F81C88042F0059F1B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC36E2F91C88042F0059F1B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AC36E2FB1C88042F0059F1B4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		AC36E2FC1C88042F0059F1B4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		AC36E2FE1C88042F0059F1B4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		AC36E2FF1C88042F0059F1B4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AC36E2FB1C88042F0059F1B4 /* StopWatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
+		AC36E2FC1C88042F0059F1B4 /* StopWatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
+		AC36E2FE1C88042F0059F1B4 /* AlarmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		AC36E3021C8804300059F1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC36E3041C8804300059F1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC36E3071C8804300059F1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +54,9 @@
 		AC36E3191C8804300059F1B4 /* HelloTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC36E31D1C8804300059F1B4 /* HelloTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTimerUITests.m; sourceTree = "<group>"; };
 		AC36E31F1C8804300059F1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC36E32B1C8BB9BB0059F1B4 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		AC36E32D1C8BCF850059F1B4 /* TimerSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerSelectionController.h; sourceTree = "<group>"; };
+		AC36E32E1C8BCF850059F1B4 /* TimerSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerSelectionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +109,13 @@
 			children = (
 				AC36E2F81C88042F0059F1B4 /* AppDelegate.h */,
 				AC36E2F91C88042F0059F1B4 /* AppDelegate.m */,
-				AC36E2FB1C88042F0059F1B4 /* FirstViewController.h */,
-				AC36E2FC1C88042F0059F1B4 /* FirstViewController.m */,
-				AC36E2FE1C88042F0059F1B4 /* SecondViewController.h */,
-				AC36E2FF1C88042F0059F1B4 /* SecondViewController.m */,
+				AC36E2FB1C88042F0059F1B4 /* StopWatchViewController.h */,
+				AC36E2FC1C88042F0059F1B4 /* StopWatchViewController.m */,
+				AC36E2FE1C88042F0059F1B4 /* AlarmViewController.h */,
+				AC36E32B1C8BB9BB0059F1B4 /* AlarmViewController.m */,
 				AC36E3011C8804300059F1B4 /* Main.storyboard */,
+				AC36E32D1C8BCF850059F1B4 /* TimerSelectionController.h */,
+				AC36E32E1C8BCF850059F1B4 /* TimerSelectionController.m */,
 				AC36E3041C8804300059F1B4 /* Assets.xcassets */,
 				AC36E3061C8804300059F1B4 /* LaunchScreen.storyboard */,
 				AC36E3091C8804300059F1B4 /* Info.plist */,
@@ -275,10 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC36E3001C88042F0059F1B4 /* SecondViewController.m in Sources */,
+				AC36E32C1C8BB9BB0059F1B4 /* AlarmViewController.m in Sources */,
 				AC36E2FA1C88042F0059F1B4 /* AppDelegate.m in Sources */,
-				AC36E2FD1C88042F0059F1B4 /* FirstViewController.m in Sources */,
+				AC36E2FD1C88042F0059F1B4 /* StopWatchViewController.m in Sources */,
 				AC36E2F71C88042F0059F1B4 /* main.m in Sources */,
+				AC36E32F1C8BCF850059F1B4 /* TimerSelectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +510,7 @@
 				AC36E3241C8804300059F1B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC36E3251C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +519,7 @@
 				AC36E3271C8804300059F1B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC36E3281C8804300059F1B4 /* Build configuration list for PBXNativeTarget "HelloTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +528,7 @@
 				AC36E32A1C8804300059F1B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
