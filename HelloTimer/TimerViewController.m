@@ -6,8 +6,10 @@
 //  Copyright © 2016 Seth White. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "TimerViewController.h"
 #import "TimerSelectionController.h"
+
 
 @interface TimerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
@@ -41,23 +43,38 @@ NSTimer *alarmTimer;
         userInfo: nil
         repeats: YES];
     
-    // Disable the Start button while the timer is running
     [_alarmStartButton setEnabled:NO];
+    [_alarmStopButton setEnabled:YES];
 }
 
 - (void) updateTimer{
-    timer -= 1;
     [self setTimerLabel];
-    
     if (timer < 1){
+        [self playTimerSound];
         [self clearTimer];
+        [_alarmStopButton setEnabled:NO];
+        [_alarmStartButton setEnabled:YES];
     }
+    else {
+        timer -= 1;
+    }
+}
+
+- (void) playTimerSound {
+    // User 1005 for now.  The Calendar Alert sound
+    // http://iphonedevwiki.net/index.php/AudioServices
+    NSLog(@"Playing Sound");
+    //AudioServicesPlaySystemSound(1053);
+    AudioServicesPlayAlertSound(1053);
+    //SystemSoundID soundId = 1304;
+    
 }
 
 - (void) clearTimer{
     [alarmTimer invalidate];
     // Enable the Start button now the timer is not running.
     [_alarmStartButton setEnabled:YES];
+    
 }
 
 
@@ -83,22 +100,34 @@ NSTimer *alarmTimer;
 }
 
 - (void) timerSelected: (NSTimeInterval)timeInterval{
+    
     NSLog(@"Timer Selected");
     
     NSLog(@"Date picker time interval %f", timeInterval);
+
+    NSLog(@"Timer value before: %f", timeInterval);
+    
     timer = timeInterval;
     
     [self setTimerLabel];
 }
 
 - (void) setTimerLabel{
-    int hours = timer / (60 * 60);
-    int minutes = (timer - (hours * 60 * 60) ) / 60;
+    int hours;
+    int minutes;
+    int seconds;
+    int r;
     
-    NSLog(@"Set Timer Hours: %d", hours);
-    NSLog(@"Set Timer Minutes: %d", minutes);
+    //NSLog(@"Timer value before: %f", timeInterval);
     
-    _timerLabel.text = [NSString stringWithFormat:@"%d:%d", hours, minutes];
+    // Parse timer to readable format
+    hours = timer / (60*60);
+    r = timer - (hours * 60*60);
+    minutes = r / (60);
+    r = r - (minutes * 60);
+    seconds = r;
+    
+    _timerLabel.text = [NSString stringWithFormat:@"%d:%d:%d", hours, minutes, seconds];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -67,10 +67,11 @@ unsigned long stopWatchTime = 0;
     int seconds = 0;
     int milliseconds = 0;
     int r = 0;
+    NSString *stopWatchText = @"";
     
     // Parse stopWatchTime to readable format
-    hours = stopWatchTime / (60*60*10);
-    r = stopWatchTime - (hours * 60*60*10);
+    hours = (int) stopWatchTime / (60*60*10);
+    r = (int) stopWatchTime - (hours * 60*60*10);
     minutes = r / (60*10);
     r = r - (minutes * 60 * 10);
     seconds = r / 100;
