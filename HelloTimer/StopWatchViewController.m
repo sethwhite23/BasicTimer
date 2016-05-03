@@ -77,7 +77,7 @@ unsigned long stopWatchTime = 0;
     seconds = r / 100;
     milliseconds = fmodf(stopWatchTime, 100);
     
-     _stopWatchLabel.text = [NSString stringWithFormat:@"%d:%d:%d.%d", hours, minutes, seconds, milliseconds];
+     _stopWatchLabel.text = [NSString stringWithFormat:@"%d:%02d:%02d.%02d", hours, minutes, seconds, milliseconds];
 }
 
 @end

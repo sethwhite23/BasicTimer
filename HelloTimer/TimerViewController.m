@@ -10,30 +10,37 @@
 #import "TimerViewController.h"
 #import "TimerSelectionController.h"
 
-
 @interface TimerViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *alarmStartButton;
 @property (weak, nonatomic) IBOutlet UIButton *alarmStopButton;
-
+@property (weak, nonatomic) IBOutlet UIDatePicker *timerDatePicker;
+@property (weak, nonatomic) IBOutlet UIButton *timerButton;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @end
 
 NSTimeInterval timer = 0;
 NSTimer *alarmTimer;
-
+BOOL timer_running = NO;
 
 @implementation TimerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self setTimerLabel];
+    [self updateTime];
+    
+    if (timer_running){
+        [_timerButton setEnabled:NO];
+        [_alarmStartButton setEnabled:NO];
+        [_alarmStopButton setEnabled:YES];
+
+    }
+    else{
+        [_timerButton setEnabled:YES];
+        [_alarmStartButton setEnabled:YES];
+        [_alarmStopButton setEnabled:NO];
+    }
 }
-
-
-- (IBAction)setTimerButtonPressed:(UIButton *)sender {
-}
-
 
 - (IBAction)startButtonPressed:(UIButton *)sender {
     // Start the timer refire every second
@@ -43,43 +50,50 @@ NSTimer *alarmTimer;
         userInfo: nil
         repeats: YES];
     
-    [_alarmStartButton setEnabled:NO];
-    [_alarmStopButton setEnabled:YES];
+    [self timerStarted];
 }
 
 - (void) updateTimer{
-    [self setTimerLabel];
+    [self updateTime];
     if (timer < 1){
         [self playTimerSound];
-        [self clearTimer];
-        [_alarmStopButton setEnabled:NO];
-        [_alarmStartButton setEnabled:YES];
+        [self timerStopped];
     }
     else {
         timer -= 1;
     }
 }
 
+- (void) timerStarted{
+    [_alarmStopButton setEnabled:YES];
+    [_alarmStartButton setEnabled:NO];
+    [_timerButton setEnabled:NO];
+    timer_running = YES;
+}
+
+- (void) timerStopped{
+    [self clearTimer];
+    [_alarmStopButton setEnabled:NO];
+    [_alarmStartButton setEnabled:YES];
+    [_timerButton setEnabled:YES];
+    timer_running = NO;
+}
+
 - (void) playTimerSound {
     // User 1005 for now.  The Calendar Alert sound
     // http://iphonedevwiki.net/index.php/AudioServices
     NSLog(@"Playing Sound");
-    //AudioServicesPlaySystemSound(1053);
     AudioServicesPlayAlertSound(1053);
-    //SystemSoundID soundId = 1304;
-    
 }
 
 - (void) clearTimer{
     [alarmTimer invalidate];
     // Enable the Start button now the timer is not running.
     [_alarmStartButton setEnabled:YES];
-    
 }
 
-
 - (IBAction)stopButtonPressed:(id)sender {
-    [self clearTimer];
+    [self timerStopped];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -87,12 +101,9 @@ NSTimer *alarmTimer;
     // Check the segue identifier
     if ([segue.identifier isEqualToString:@"setTimer"])
     {
-        NSLog(@"Prepare for seque to timer");
-        
         // Get the TimerSelectionController from the Seque via the NavigationController
         UINavigationController *navController = [segue destinationViewController];
         TimerSelectionController *timerSelectionController = (TimerSelectionController *)([navController viewControllers][0]);
-        NSLog(@"timerSelectionController %@", timerSelectionController);
         
         // Set the delegate to this class in order to get the DatePicker value
         timerSelectionController.timerSelectionDelegate = self;
@@ -100,34 +111,28 @@ NSTimer *alarmTimer;
 }
 
 - (void) timerSelected: (NSTimeInterval)timeInterval{
-    
-    NSLog(@"Timer Selected");
-    
-    NSLog(@"Date picker time interval %f", timeInterval);
-
-    NSLog(@"Timer value before: %f", timeInterval);
-    
     timer = timeInterval;
-    
-    [self setTimerLabel];
+    [self updateTimerText: timeInterval];
 }
 
-- (void) setTimerLabel{
+- (void) updateTime{
+    [self updateTimerText: timer];
+}
+
+- (void) updateTimerText: (int) timer_seconds {
     int hours;
     int minutes;
     int seconds;
     int r;
     
-    //NSLog(@"Timer value before: %f", timeInterval);
-    
     // Parse timer to readable format
-    hours = timer / (60*60);
-    r = timer - (hours * 60*60);
+    hours = timer_seconds / (60*60);
+    r = timer_seconds - (hours * 60*60);
     minutes = r / (60);
     r = r - (minutes * 60);
     seconds = r;
     
-    _timerLabel.text = [NSString stringWithFormat:@"%d:%d:%d", hours, minutes, seconds];
+    _timerLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
 }
 
 - (void)didReceiveMemoryWarning {

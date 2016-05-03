@@ -116,25 +116,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-vZ-1bt">
                                 <rect key="frame" x="20" y="403" width="560" height="48"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPD-kv-lbd">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="48"/>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Set">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="6wd-4B-CTp" kind="presentation" identifier="setTimer" id="6lk-iY-4h2"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2I-FO-WCa">
-                                        <rect key="frame" x="240" y="0.0" width="64" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="48"/>
                                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Start">
@@ -170,8 +153,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-PJ-hpf">
-                                <rect key="frame" x="233" y="168" width="134" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOl-fi-LOd">
+                                <rect key="frame" x="255" y="157" width="90" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="0.00">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6wd-4B-CTp" kind="presentation" identifier="setTimer" id="HSY-nB-P3T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-K5-SPw" customClass="timerLabel">
+                                <rect key="frame" x="238" y="213" width="125" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -179,18 +172,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QOl-fi-LOd" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerXWithinMargins" id="2A3-GT-Heq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Efp-vZ-1bt" secondAttribute="trailing" id="580-f6-c2C"/>
                             <constraint firstItem="Efp-vZ-1bt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="I0C-2S-Fno"/>
-                            <constraint firstItem="gc2-PJ-hpf" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerXWithinMargins" id="W4r-QT-ZRN"/>
+                            <constraint firstItem="Efp-vZ-1bt" firstAttribute="top" secondItem="v4f-K5-SPw" secondAttribute="bottom" constant="200" id="YnS-bC-hVe"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Efp-vZ-1bt" secondAttribute="bottom" constant="100" id="c1I-by-2LI"/>
-                            <constraint firstItem="Efp-vZ-1bt" firstAttribute="top" secondItem="gc2-PJ-hpf" secondAttribute="bottom" constant="200" id="mGv-1v-Gv3"/>
+                            <constraint firstItem="v4f-K5-SPw" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerXWithinMargins" id="dAN-EE-Z1W"/>
+                            <constraint firstItem="Efp-vZ-1bt" firstAttribute="top" secondItem="QOl-fi-LOd" secondAttribute="bottom" constant="200" id="qQc-67-Bqg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timer" image="alarm" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="alarmStartButton" destination="A2I-FO-WCa" id="QwI-fK-dWx"/>
                         <outlet property="alarmStopButton" destination="3lp-s9-QXe" id="CQC-0v-fqv"/>
-                        <outlet property="timerLabel" destination="gc2-PJ-hpf" id="HBf-mU-xQz"/>
+                        <outlet property="timerButton" destination="QOl-fi-LOd" id="TAa-Rx-qId"/>
+                        <outlet property="timerLabel" destination="v4f-K5-SPw" id="6wc-EV-GE6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -226,7 +222,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fal-CR-0Gh">
-                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <rect key="frame" x="0.0" y="205" width="600" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="478944300.39961803">
                                     <!--2016-03-06 08:05:00 +0000-->
                                 </date>
